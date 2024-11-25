@@ -199,3 +199,164 @@ x==========x]
 [2024-11-25 21:46:55,775: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2024-11-25 21:58:24,665: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-25 21:58:24,676: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:58:24,681: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:58:24,683: INFO: common: created directory at: artifacts]
+[2024-11-25 21:58:24,697: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-25 21:58:24,699: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 22:00:14,132: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 22:00:14,997: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-25 22:02:07,145: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-25 22:02:07,153: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:02:07,153: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:02:07,153: INFO: common: created directory at: artifacts]
+[2024-11-25 22:02:07,153: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-25 22:02:07,153: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 22:03:50,827: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 22:03:51,731: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-25 22:06:17,157: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-25 22:06:17,165: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:06:17,173: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:06:17,173: INFO: common: created directory at: artifacts]
+[2024-11-25 22:06:17,173: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-25 22:06:17,181: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 22:07:38,118: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 22:07:39,027: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-25 22:07:53,306: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 22:07:54,194: INFO: stage_02_prepare_base_model: *******************]
+[2024-11-25 22:07:54,194: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-25 22:07:54,194: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:07:54,194: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:07:54,202: INFO: common: created directory at: artifacts]
+[2024-11-25 22:07:54,202: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-25 22:07:54,805: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-25 22:07:55,093: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-25 22:08:38,831: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 22:08:39,689: INFO: stage_02_prepare_base_model: *******************]
+[2024-11-25 22:08:39,697: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-25 22:08:39,697: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:08:39,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:08:39,697: INFO: common: created directory at: artifacts]
+[2024-11-25 22:08:39,697: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-25 22:08:40,289: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-25 22:08:40,561: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-25 22:08:48,252: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 22:08:49,099: INFO: stage_03_model_training: *******************]
+[2024-11-25 22:08:49,099: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-11-25 22:08:49,099: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:08:49,107: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:08:49,107: INFO: common: created directory at: artifacts]
+[2024-11-25 22:08:49,107: INFO: common: created directory at: artifacts\training]
+[2024-11-25 22:11:10,852: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-11-25 22:12:21,393: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 22:12:22,627: INFO: stage_03_model_training: *******************]
+[2024-11-25 22:12:22,627: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-11-25 22:12:22,637: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:12:22,637: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:12:22,637: INFO: common: created directory at: artifacts]
+[2024-11-25 22:12:22,637: INFO: common: created directory at: artifacts\training]
+[2024-11-25 22:14:31,470: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-11-25 22:14:39,654: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 22:14:42,812: INFO: stage_04_model_evaluation: *******************]
+[2024-11-25 22:14:42,812: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-11-25 22:14:42,812: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 22:14:42,820: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 22:14:42,820: INFO: common: created directory at: artifacts]
+[2024-11-25 22:15:18,054: INFO: common: json file saved at: scores.json]
+[2024-11-25 22:15:18,062: INFO: common: json file saved at: scores.json]
+[2024-11-25 22:15:18,062: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-11-25 22:54:44,847: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 22:54:46,564: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.160.214:8080]
+[2024-11-25 22:54:46,569: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-25 22:54:54,015: INFO: _internal: 192.168.160.214 - - [25/Nov/2024 22:54:54] "GET / HTTP/1.1" 200 -]
+[2024-11-25 22:55:19,368: INFO: _internal: 127.0.0.1 - - [25/Nov/2024 22:55:19] "GET / HTTP/1.1" 200 -]
+[2024-11-25 22:55:43,256: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\machine learning\Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\machine learning\projects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\admin\anaconda3\Lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2024-11-25 22:55:43,294: INFO: _internal: 127.0.0.1 - - [25/Nov/2024 22:55:43] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-11-25 23:01:43,201: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 23:01:45,024: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.160.214:8080]
+[2024-11-25 23:01:45,029: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-11-25 23:01:48,185: INFO: _internal: 127.0.0.1 - - [25/Nov/2024 23:01:48] "GET / HTTP/1.1" 200 -]
+[2024-11-25 23:01:57,071: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask_cors\extension.py", line 194, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+                         ^^^^^^^^^^^^^^^^^^
+  File "D:\machine learning\Projects\Kidney-Disease-Classification-Deep-Learning-Project\app.py", line 44, in predictRoute
+    result = clApp.classifier.predict()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\machine learning\projects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\prediction.py", line 16, in predict
+    model = load_model(os.path("D:\machine learning\Projects\Kidney-Disease-Classification-Deep-Learning-Project\artifacts\training\model.h5"))
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+[2024-11-25 23:01:57,104: INFO: _internal: 127.0.0.1 - - [25/Nov/2024 23:01:57] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
