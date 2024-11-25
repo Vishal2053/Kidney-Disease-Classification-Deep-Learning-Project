@@ -86,3 +86,116 @@ x==========x]
 [2024-11-25 18:11:24,369: INFO: main: >>>>>> stage Training completed <<<<<<
 
 x==========x]
+[2024-11-25 18:54:11,522: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 18:54:11,529: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 18:54:11,530: INFO: common: created directory at: artifacts]
+[2024-11-25 18:55:00,243: INFO: common: json file saved at: scores.json]
+[2024-11-25 18:55:06,942: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2024-11-25 18:55:08,323: INFO: builder_impl: Assets written to: C:\Users\admin\AppData\Local\Temp\tmpwkwslnks\model\data\model\assets]
+[2024-11-25 21:33:54,551: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 21:33:58,004: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-25 21:33:58,012: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:33:58,012: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:33:58,012: INFO: common: created directory at: artifacts]
+[2024-11-25 21:33:58,020: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-25 21:33:58,020: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 21:37:14,316: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 21:37:15,172: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-25 21:37:15,172: INFO: main: *******************]
+[2024-11-25 21:37:15,172: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-25 21:37:15,172: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:37:15,172: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:37:15,180: INFO: common: created directory at: artifacts]
+[2024-11-25 21:37:15,180: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-25 21:37:16,050: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-25 21:37:16,402: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-25 21:37:16,410: INFO: main: *******************]
+[2024-11-25 21:37:16,410: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-11-25 21:37:16,410: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:37:16,410: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:37:16,410: INFO: common: created directory at: artifacts]
+[2024-11-25 21:37:16,418: INFO: common: created directory at: artifacts\training]
+[2024-11-25 21:39:09,171: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-11-25 21:39:09,171: INFO: main: *******************]
+[2024-11-25 21:39:09,171: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-11-25 21:39:09,179: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:39:09,179: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:39:09,179: INFO: common: created directory at: artifacts]
+[2024-11-25 21:39:52,472: INFO: common: json file saved at: scores.json]
+[2024-11-25 21:39:52,472: INFO: common: json file saved at: scores.json]
+[2024-11-25 21:39:55,001: ERROR: main: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: '']
+Traceback (most recent call last):
+  File "D:\machine learning\Projects\Kidney-Disease-Classification-Deep-Learning-Project\main.py", line 45, in <module>
+    model_evalution.main()
+  File "d:\machine learning\projects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\pipeline\stage_04_model_evaluation.py", line 20, in main
+    evaluation.log_into_mlflow()
+  File "d:\machine learning\projects\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\model_evaluation_mlflow.py", line 60, in log_into_mlflow
+    with mlflow.start_run():
+         ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\tracking\fluent.py", line 350, in start_run
+    active_run_obj = client.create_run(
+                     ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\tracking\client.py", line 275, in create_run
+    return self._tracking_client.create_run(experiment_id, start_time, tags, run_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\tracking\_tracking_service\client.py", line 131, in create_run
+    return self.store.create_run(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 175, in create_run
+    response_proto = self._call_endpoint(CreateRun, req_body)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\store\tracking\rest_store.py", line 56, in _call_endpoint
+    return call_endpoint(self.get_host_creds(), endpoint, method, json_body, response_proto)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\utils\rest_utils.py", line 281, in call_endpoint
+    response = verify_rest_response(response, endpoint)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\admin\anaconda3\Lib\site-packages\mlflow\utils\rest_utils.py", line 213, in verify_rest_response
+    raise MlflowException(
+mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/create failed with error code 403 != 200. Response body: ''
+[2024-11-25 21:41:39,787: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-11-25 21:41:45,038: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-11-25 21:41:45,038: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:41:45,038: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:41:45,047: INFO: common: created directory at: artifacts]
+[2024-11-25 21:41:45,047: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-11-25 21:41:45,047: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 21:43:14,217: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-11-25 21:43:15,832: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-11-25 21:43:15,832: INFO: main: *******************]
+[2024-11-25 21:43:15,832: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-11-25 21:43:15,848: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:43:15,858: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:43:15,858: INFO: common: created directory at: artifacts]
+[2024-11-25 21:43:15,873: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-11-25 21:43:17,173: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-11-25 21:43:17,688: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-11-25 21:43:17,688: INFO: main: *******************]
+[2024-11-25 21:43:17,688: INFO: main: >>>>>> stage Training started <<<<<<]
+[2024-11-25 21:43:17,693: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:43:17,697: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:43:17,697: INFO: common: created directory at: artifacts]
+[2024-11-25 21:43:17,702: INFO: common: created directory at: artifacts\training]
+[2024-11-25 21:46:10,341: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-11-25 21:46:10,341: INFO: main: *******************]
+[2024-11-25 21:46:10,341: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-11-25 21:46:10,341: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-11-25 21:46:10,349: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-11-25 21:46:10,349: INFO: common: created directory at: artifacts]
+[2024-11-25 21:46:55,775: INFO: common: json file saved at: scores.json]
+[2024-11-25 21:46:55,775: INFO: common: json file saved at: scores.json]
+[2024-11-25 21:46:55,775: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
