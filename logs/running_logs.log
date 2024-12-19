@@ -368,3 +368,11 @@ TypeError: 'module' object is not callable
 [2024-11-25 23:05:14,848: INFO: _internal: [33mPress CTRL+C to quit[0m]
 [2024-11-25 23:05:26,006: INFO: _internal: 127.0.0.1 - - [25/Nov/2024 23:05:26] "GET / HTTP/1.1" 200 -]
 [2024-11-25 23:05:43,977: INFO: _internal: 127.0.0.1 - - [25/Nov/2024 23:05:43] "POST /predict HTTP/1.1" 200 -]
+[2024-12-19 11:26:27,658: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-12-19 11:26:31,388: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.102.89:8080]
+[2024-12-19 11:26:31,390: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-12-19 11:26:35,029: INFO: _internal: 127.0.0.1 - - [19/Dec/2024 11:26:35] "GET / HTTP/1.1" 200 -]
+[2024-12-19 11:27:03,603: INFO: _internal: 127.0.0.1 - - [19/Dec/2024 11:27:03] "POST /predict HTTP/1.1" 200 -]
